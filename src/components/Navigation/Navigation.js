@@ -2,31 +2,31 @@ import { NavLink } from 'react-router-dom';
 import styles from './Navigation.module.css';
 
 const Navigation = () => (
-  <nav>
-    {/* <Link to="/">Home</Link> */}
-    {/* <Link to="/movies">Movies</Link> */}
-    <NavLink
-      exact
-      to="/"
-      className={styles.link}
-      activeClassName={styles.activeLink}
-    >
-      Главная
-    </NavLink>
-    <NavLink
-      to="/authors"
-      className={styles.link}
-      activeClassName={styles.activeLink}
-    >
-      Авторы
-    </NavLink>
-    <NavLink
-      to="/books"
-      className={styles.link}
-      activeClassName={styles.activeLink}
-    >
-      Книги
-    </NavLink>
+  <nav className={styles.nav}>
+    <ul className={styles.list}>
+      <li className={styles.item}>
+        <NavLink
+          exact
+          to="/"
+          className={styles.link}
+          activeClassName={styles['link--active']}
+        >
+          Home
+        </NavLink>
+      </li>
+
+      <li>
+        <NavLink
+          to="/movies"
+          className={styles.link}
+          activeClassName={styles['link--active']}
+        >
+          Movies
+        </NavLink>
+      </li>
+    </ul>
+    {/* <b className={styles.title}>Trending movies</b> */}
   </nav>
 );
+
 export default Navigation;
