@@ -8,8 +8,8 @@ const Navigation = () => (
         <NavLink
           exact
           to="/"
-          className={styles.link}
-          activeClassName={styles['link--active']}
+          // className={styles.link}
+          activeClassName={styles.link}
         >
           Home
         </NavLink>
@@ -18,14 +18,13 @@ const Navigation = () => (
       <li>
         <NavLink
           to="/movies"
-          className={styles.link}
-          activeClassName={styles['link--active']}
+          // className={styles.link}
+          activeClassName={styles.link}
         >
           Movies
         </NavLink>
       </li>
     </ul>
-    {/* <b className={styles.title}>Trending movies</b> */}
   </nav>
 );
 

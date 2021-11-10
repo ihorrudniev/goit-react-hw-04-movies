@@ -4,7 +4,7 @@ import s from './Loader.module.css';
 
 function Spinner() {
   return (
-    <div className={s.loaderContainer}>
+    <div className={s.loader}>
       <Loader
         className="Loader"
         type="Circles"

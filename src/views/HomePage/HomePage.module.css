@@ -11,6 +11,8 @@
 }
 
 .titleMovies {
+  display: inline-block;
+  padding-bottom: 20px;
   text-transform: uppercase;
   /* cursor: default; */
 }
