@@ -1,7 +1,7 @@
 import axios from 'axios';
 
 const BASE_URL = 'https://api.themoviedb.org/3/';
-const API_KEY = process.env.KEY;
+const API_KEY = process.env.REACT_APP_API_KEY;
 
 axios.defaults.baseURL = BASE_URL;
 axios.defaults.params = {
