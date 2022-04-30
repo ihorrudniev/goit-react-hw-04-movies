@@ -1,16 +1,15 @@
-import 'dotenv'; // see https://github.com/motdotla/dotenv#how-do-i-use-dotenv-with-import
-// import express from 'express';
-import axios from 'axios';
 // eslint-disable-next-line no-unused-vars
+// import express from 'express';
+import 'dotenv/config'; // see https://github.com/motdotla/dotenv#how-do-i-use-dotenv-with-import
 
-const BASE_URL = process.env.REACT_APP_BASE_URL;
-console.log(BASE_URL);
-const API_KEY = process.env.REACT_APP_API_KEY;
-console.log(API_KEY);
+import axios from 'axios';
+require('dotenv').config();
+const BASE_URL = 'https://api.themoviedb.org/3/';
+const KEY = process.env.REACT_APP_API_KEY;
 
 axios.defaults.baseURL = BASE_URL;
 axios.defaults.params = {
-  api_key: API_KEY,
+  api_key: KEY,
   language: 'en-US',
 };
 
